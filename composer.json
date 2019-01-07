@@ -1,0 +1,44 @@
+{
+	"name": "metastore/mediawiki-ext-icon",
+	"type": "mediawiki-extension",
+	"description": "Отображение иконок Font Awesome в статье.",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://metastore.pro/",
+	"keywords": [
+		"metadata",
+		"metastore",
+		"mediawiki",
+		"font awesome"
+	],
+	"authors": [
+		{
+			"name": "Kitsune Solar",
+			"email": "kitsune.solar@gmail.com",
+			"homepage": "https://kitsune.solar/",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "support@metastore.pro",
+		"issues": "https://gitlab.com/metastore/mediawiki/mediawiki-ext-icon/issues",
+		"forum": "https://webmasters.community/",
+		"wiki": "https://webmasters.wiki/",
+		"source": "https://gitlab.com/metastore/mediawiki/mediawiki-ext-icon"
+	},
+	"require": {
+		"composer/installers": "~1.0",
+		"metastore/mediawiki-ext-kernel": "*"
+	},
+	"autoload": {
+		"classmap": [
+			"MW_EXT_Icon.class.php"
+		]
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"prepend-autoloader": false
+	},
+	"extra": {
+		"installer-name": "MW_EXT_Icon"
+	}
+}
